@@ -5,9 +5,11 @@ import time
 from datetime import datetime
 
 producer = KafkaProducer(
-    bootstrap_servers='localhost:9092',
+    bootstrap_servers='kafka:9092',  # 'kafka' is the Docker service name
     value_serializer=lambda v: json.dumps(v).encode('utf-8')
 )
+
+
 
 SERVICES = ["auth-service", "payment-service", "order-service"]
 
