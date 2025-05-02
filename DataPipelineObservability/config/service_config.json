@@ -1,0 +1,13 @@
+{
+    "auth-service": {
+      "team": "Team A",
+      "latency_threshold": 500,
+      "error_budget": 0.01
+    },
+    "payment-service": {
+      "team": "Team B",
+      "latency_threshold": 600,
+      "error_budget": 0.015
+    }
+  }
+  
